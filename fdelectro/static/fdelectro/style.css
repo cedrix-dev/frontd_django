@@ -1,0 +1,36 @@
+
+li{
+    margin: 0px 0px 0px ;
+}
+p{
+    color: black;
+}
+
+body{
+    padding:0px 0px 0px 0px;
+    min-width: 967px;
+    z-index:0;
+}
+.test{
+    width: 200px;
+}
+.navbar-dark {
+     background-color: #512DA8;
+}
+.cr{
+    color: white;
+}
+nav{
+    min-width: 1000px;
+    
+}
+.my_btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.my_foo{
+    height: 50px;
+}
+.bd{
+background-color: rgb(250, 246, 239);
+}
