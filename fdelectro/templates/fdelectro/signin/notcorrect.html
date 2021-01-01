@@ -22,12 +22,12 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action='/fdelectro/signin/command/1' method='post'>{% csrf_token %}
+                    <form action='/fdelectro/register/' method='post'>{% csrf_token %}
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="form-group col-sm-4">
                                     <label class="sr-only" for="exampleInputEmail3">firstName </label>
-                                    <input required="true" type="text" class="form-control form-control-sm mr-1" id="FN" name="firstName" placeholder="firstName ">
+                                    <input type="text" class="form-control form-control-sm mr-1" id="FN" name="firstName" placeholder="firstName ">
                             </div>
                             <div class="form-group col-sm-4">
                                 <label class="sr-only" for="exampleInputPassword3">lastName</label>
@@ -37,7 +37,7 @@
                         <div class="form-row">
                             <div class="form-group col-sm-4">
                                     <label class="sr-only" for="exampleInputEmail3">Identifiant</label>
-                                    <input required="true" type="text" class="form-control form-control-sm mr-1" id="ID" name="Identifiant" placeholder="Identifiant">
+                                    <input type="text" class="form-control form-control-sm mr-1" id="ID" name="Identifiant" placeholder="Identifiant">
                             </div>
                             <div class="form-group col-sm-4">
                                 <label class="sr-only" for="exampleInputPassword3">Password</label>
@@ -50,7 +50,7 @@
                                 <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Confirm your Password">
                             </div>
                             <div class="form-group col-sm-4">    
-                                <select required="true"  class="form-control" name="grade" id="Grade">
+                                <select class="form-control" name="grade" id="Grade">
                                     <option >Lieutenant Colonel</option>
                                     <option >Chef d'Escadron</option>
                                     <option >Capitaine</option>
@@ -80,16 +80,16 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action='/fdelectro/signin/command/1' method='post'>
+                    <form action='/fdelectro/signin/' method='post'>
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="form-group col-sm-4">
                                     <label class="sr-only" for="exampleInputEmail3">identifiant</label>
-                                    <input required="true" type="text" name="Identifiant" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="identifiant">
+                                    <input type="text" name="Identifiant" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="identifiant">
                             </div>
                             <div class="form-group col-sm-4">
                                 <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input required="true" type="password" name="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                <input type="password" name="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-row">
@@ -126,7 +126,7 @@
                 <div class="col-12 col-sm-6">
                     
                     <h1 class="cr"> Electronique 4GI </h1>
-                    <p class="cr"> Bienvenu, veillez vous connecter ou vous enregistrer !  </p>
+                    <p class="cd" style="color: red;"> Entrer vos bons credentiels !!  </p>
                 </div>
 
                 <div class="col-12 col-sm align-self-center">
@@ -137,15 +137,15 @@
     </header>
     
     <div class="container">
-        <form action='/fdelectro/signin/command/1' method='post'>{% csrf_token %}
+        <form action='/fdelectro/signin/' method='post'>{% csrf_token %}
             <div class="form-group">
               <label for="identifiant">Votre identifiant</label>
-              <input required="true" type="text" class="form-control" id="identifiant" name="Identifiant"  placeholder="identifiant">
+              <input type="text" class="form-control" id="identifiant" name="Identifiant"  placeholder="identifiant">
               <small  class="form-text text-muted">prenez garde! mettez votre identifiant et non votre nom !.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Mot de passe</label>
-              <input required="true" type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -159,7 +159,6 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis doloremque deleniti odio corporis consectetur velit magni. Commodi cum, rerum illo odit dolorem 
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem dolor distinctio dolore quo consequatur doloremque accusamus. Voluptatum illum mollitia, voluptas corrupti ab ipsam fuga reiciendis est accusantium maiores enim.
             beatae perferendis enim deleniti excepturi vel ab tempora.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at dignissimos quas nesciunt voluptatibus assumenda quisquam, mollitia aperiam, odio esse maiores minus praesentium tenetur voluptatum architecto dicta nihil a error.
         </p>
     </div>
     

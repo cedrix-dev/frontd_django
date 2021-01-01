@@ -20,6 +20,9 @@ body{
 .cr{
     color: white;
 }
+.cd{
+    color:red;
+}
 nav{
     min-width: 1000px;
     
@@ -33,4 +36,19 @@ nav{
 }
 .bd{
 background-color: rgb(250, 246, 239);
+}
+.bon{
+    margin: 20px 20px 20px 20px;
+    width: 50px;
+    height: 50px;
+}
+.boff{
+    margin: 20px 20px 20px 20px;
+    width: 50px;
+    height: 50px;
+}
+.cmd{
+    margin: 200px 200px 200px 200px;
+    padding-left: 4000px;
+
 }

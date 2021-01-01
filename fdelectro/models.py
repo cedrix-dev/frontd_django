@@ -10,7 +10,7 @@ class register(models.Model):
 	password=models.CharField(max_length=200)
 	grade=models.CharField(max_length=200)
 	def __str__(self):
-		return self.firstName
+		return self.grade
 	
 class signin(models.Model):
 

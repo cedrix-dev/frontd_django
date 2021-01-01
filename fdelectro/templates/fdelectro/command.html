@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'fdelectro/font-awesome/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'fdelectro/bootstrap-social/bootstrap-social.css'%}">
+    <link rel="stylesheet" href="{% static 'fdelectro/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'fdelectro/style.css' %}">
+    <meta charset="UTF-8">
+    
+    <title>Electronique</title>
+</head>
+
+<body class="bd">
+   
+  
+   
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="" id="title" class="navbar-brand mr-auto"><i class="fa fa-computer"> Ced|deV</i> </a>
+            <div class="collapse navbar-collapse" id="Navbar"> 
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a href="1" class="nav-link btn btn-" role="button"> <i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="2" class="nav-link"><i class="fa fa-terminal"></i> Commande</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="3" class="nav-link"><i class="fa fa-user"></i> About Us</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </nav>
+    
+    <header class="jumbotron bg-info">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    
+                    <h1 class=""> Electronique 4GI </h1>
+                    <p class=""> PRET POUR LA MISSION ? </p>
+                </div>
+
+                <div class="col-12 col-sm align-self-center">
+                    <img src="" class="img-fluid">
+                </div>
+            </div>
+        </div>  
+    </header>
+    <div class="container"style="margin-top:70px; display: flex;width: 500px; justify-content: center; align-items: center;">
+
+        <div class="container"> 
+            <a href="#" style="margin-right: 50px; width: 60px;" class="btn btn-primary" role="button"> <i class="fa fa-sign-in" aria-hidden="true"></i> On</a>
+            <a href="#" style="margin-top: 50px;width: 60px;" class="btn btn-primary" role="button"> <i class="fa fa-power-off" aria-hidden="true"></i> Off</a>
+        </div>
+        
+        <div class="container">
+            <a href="#" style="width: 80px;" class="btn btn-primary" role="button"> <i class="fa fa-angle-double-left"></i> Left</a>
+        
+        </div>
+        <div class="container">
+            <a href="#" class="btn btn-primary" role="button"> <i class="fa fa-angle-double-up"></i> Avancer</a>
+            
+            <a href="#" style="margin-top: 80px;" class="btn btn-primary" role="button"> Reculer <i class="fa fa-angle-double-down"></i> </a>
+        
+        </div>
+        <div class="container">
+            <a href="#" style="width: 80px; " class="btn btn-primary" role="button">Right <i class="fa fa-angle-double-right"></i> </a>    
+        </div>
+        
+        <div class="container">
+            <a href="#" style="width: 80px; margin-left: 50px;" class="btn btn-primary" role="button">Allumer Phare <i class="fa fa-angle"></i> </a>    
+        </div>
+    </div>
+
+
+    <script src="{% static 'fdelectro/jquery/dist/jquery.slim.min.js' %}"></script>
+    <script src= "{% static 'fdelectro/popper.js/dist/umd/popper.min.js' %}"></script>
+    <script src="{% static 'fdelectro/js/bootstrap.min.js' %}"></script>
+   
+</body>
+</html>
