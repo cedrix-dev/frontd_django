@@ -48,11 +48,7 @@ def signin1(request):
 
 
 def home(request):
-
-	sig=signinForm(request.POST)
-	print(sig)
-	my_id=sig.cleaned_data['Identifiant']
-	return render(request,'fdelectro/signin/index.html',{'my_id':my_id})
+	return render(request,'fdelectro/signin/index.html')
 
 
 def about(request):

@@ -22,7 +22,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action='/fdelectro/register/' method='post'>{% csrf_token %}
+                    <form action='/fdelectro/signin/command/' method='post'>{% csrf_token %}
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -80,7 +80,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action='/fdelectro/signin/' method='post'>
+                    <form action='/fdelectro/signin/command/' method='post'>
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -137,7 +137,7 @@
     </header>
     
     <div class="container">
-        <form action='/fdelectro/signin/' method='post'>{% csrf_token %}
+        <form action='/fdelectro/signin/command/' method='post'>{% csrf_token %}
             <div class="form-group">
               <label for="identifiant">Votre identifiant</label>
               <input type="text" class="form-control" id="identifiant" name="Identifiant"  placeholder="identifiant">

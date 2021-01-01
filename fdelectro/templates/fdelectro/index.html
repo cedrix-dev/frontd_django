@@ -80,7 +80,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action='/fdelectro/signin/command/1' method='post'>
+                    <form action='/fdelectro/signin/command/' method='post'>
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -126,6 +126,7 @@
                 <div class="col-12 col-sm-6">
                     
                     <h1 class="cr"> Electronique 4GI </h1>
+                
                     <p class="cr"> Bienvenu, veillez vous connecter ou vous enregistrer !  </p>
                 </div>
 
@@ -137,7 +138,7 @@
     </header>
     
     <div class="container">
-        <form action='/fdelectro/signin/command/1' method='post'>{% csrf_token %}
+        <form action='/fdelectro/signin/command/' method='post'>{% csrf_token %}
             <div class="form-group">
               <label for="identifiant">Votre identifiant</label>
               <input required="true" type="text" class="form-control" id="identifiant" name="Identifiant"  placeholder="identifiant">
