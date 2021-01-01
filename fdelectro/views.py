@@ -26,7 +26,7 @@ def register1(request):
 			firstname=rgt.cleaned_data['firstName']
 			identifiant=rgt.cleaned_data['Identifiant']
 			args={'rgt':rgt,'firstname':firstname,'identifiant':identifiant}
-			return render(request,'fdelectro/register/index.html',args)
+			return render(request,'fdelectro/signin/index.html',args)
 	else:
 		return index(request)
 	
@@ -38,7 +38,9 @@ def signin1(request):
 		if sig.is_valid():
 			my_id=sig.cleaned_data['Identifiant']
 			passwd=sig.cleaned_data['password']
+			print(my_id)
 			qset=list(register.objects.filter(Identifiant=my_id,password=passwd))
+			print(qset)
 			if len(qset)!=0 :
 				arg={'sig':sig,'my_id':my_id,'password':passwd}
 				return render(request,'fdelectro/signin/index.html',arg)
