@@ -49,8 +49,8 @@ def signin1(request):
 	
 
 
-def home(request):
-	return render(request,'fdelectro/signin/index.html')
+def btn(request):
+	print ('btn')
 
 
 def about(request):
