@@ -86,7 +86,7 @@ def btn16(request):
 
 
 def about(request):
-	return render(request,'fdelectro/command.html')
+	return render(request,'fdelectro/aboutus.html')
 
 def home(request):
 	return render(request,'fdelectro/index.html')
