@@ -51,28 +51,42 @@ def signin1(request):
 
 def btn10(request):
 	print (10)
+	arg={'action':'Avancer'}
+	return render(request,'fdelectro/command.html',arg)
 
 def btn11(request):
 	print (11)
+	arg={'action':'Reculer'}
+	return render(request,'fdelectro/command.html',arg)
 
 def btn12(request):
 	print (12)
+	arg={'action':'Avancer'}
+	return render(request,'fdelectro/command.html',arg)
 
 def btn13(request):
 	print (13)
+	arg={'action':'Avancer'}
+	return render(request,'fdelectro/command.html',arg)
 
 def btn14(request):
 	print (14)
+	arg={'action':'Avancer'}
+	return render(request,'fdelectro/command.html',arg)
 
 def btn15(request):
 	print (15)
+	arg={'action':'Avancer'}
+	return render(request,'fdelectro/command.html',arg)
 
 def btn16(request):
 	print (16)
+	arg={'action':'Avancer'}
+	return render(request,'fdelectro/command.html',arg)
 
 
 def about(request):
-	return render(request,'fdelectro/aboutus.html')
+	return render(request,'fdelectro/command.html')
 
 def command(request):
 	return render(request,'fdelectro/command.html')
