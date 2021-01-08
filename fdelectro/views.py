@@ -49,8 +49,26 @@ def signin1(request):
 	
 
 
-def btn(request):
-	print ('btn')
+def btn10(request):
+	print (10)
+
+def btn11(request):
+	print (11)
+
+def btn12(request):
+	print (12)
+
+def btn13(request):
+	print (13)
+
+def btn14(request):
+	print (14)
+
+def btn15(request):
+	print (15)
+
+def btn16(request):
+	print (16)
 
 
 def about(request):
