@@ -51,37 +51,37 @@ def signin1(request):
 
 def btn10(request):
 	print (10)
-	arg={'action':'Avancer'}
+	arg={'alerte':'On','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 def btn11(request):
 	print (11)
-	arg={'action':'Reculer'}
+	arg={'alerte':'Off','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 def btn12(request):
 	print (12)
-	arg={'action':'Avancer'}
+	arg={'alerte':'Avancer','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 def btn13(request):
 	print (13)
-	arg={'action':'Avancer'}
+	arg={'alerte':'Avancer','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 def btn14(request):
 	print (14)
-	arg={'action':'Avancer'}
+	arg={'alerte':'Avancer','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 def btn15(request):
 	print (15)
-	arg={'action':'Avancer'}
+	arg={'alerte':'Avancer','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 def btn16(request):
 	print (16)
-	arg={'action':'Avancer'}
+	arg={'alerte':'Avancer','alert':True}
 	return render(request,'fdelectro/command.html',arg)
 
 
@@ -89,7 +89,7 @@ def about(request):
 	return render(request,'fdelectro/aboutus.html')
 
 def home(request):
-	return render(request,'fdelectro/index.html')
+	return render(request,'fdelectro/signin/index.html')
 
 def command(request):
 	return render(request,'fdelectro/command.html')
